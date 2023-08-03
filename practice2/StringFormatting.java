@@ -6,8 +6,8 @@ public class StringFormatting {
         String[] strFormats = {
                 "%s",    // 1. 기본
                 "%2s",   // 2. 자리 확보
-                "%.4s",  // 3. ~글자만
-                "%2.4s", // 4.
+                "%.5s",  // 3. ~글자만
+                "%2.5s", // 4.
                 "%-5s",  // 5. 왼쪽 정렬
         };
 
@@ -20,9 +20,11 @@ public class StringFormatting {
             }
             format = format.trim() + "%n%n";
 
-            System.out.printf(format, "Hello", "하이염");
+            System.out.printf(format, "Hi", "하이염");
 
             strResults[i] = format.formatted("Hello", "하이염");
         }
+
+        System.out.println("하하하");
     }
 }
