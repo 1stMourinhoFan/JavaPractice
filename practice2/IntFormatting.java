@@ -5,12 +5,12 @@ public class IntFormatting {
         //  💡 정수 다양하게 포매팅하기
         String[] intFormats = {
                 "%d",        // 1. 기본
-                "%13d",      // 2. n 자리수 확보, 오른쪽 정렬
-                "%013d",     // 3. 빈 자리수 0으로 채움
-                "%+13d",     // 4. 양수는 앞에 + 붙임
-                "%,13d",     // 5. 쉼표 사용
-                "%-13d",     // 6. 자리수 확보, 왼쪽 정렬
-                "%+,013d"    // 7. 13자리수 확보, 빈 자리수 0, 양수면 앞에 +
+                "%4d",      // 2. n 자리수 확보, 오른쪽 정렬
+                "%04d",     // 3. 빈 자리수 0으로 채움
+                "%+4d",     // 4. 양수는 앞에 + 붙임
+                "%,4d",     // 5. 쉼표 사용
+                "%-4d",     // 6. 자리수 확보, 왼쪽 정렬
+                "%+,04d"    // 7. 13자리수 확보, 빈 자리수 0, 양수면 앞에 +
         };
 
         String[] intResults = new String[intFormats.length];
@@ -30,6 +30,8 @@ public class IntFormatting {
 
             //  ⭐️ formatted 메소드에서도 사용 가능
             intResults[i] = String.format(format,12, 2345, 67890, -1234567);
+
+            System.out.println("HI");
         }
     }
 }
