@@ -26,5 +26,6 @@ public class StringFormatting {
         }
 
         System.out.println("하하하");
+        System.out.println("Hello");
     }
 }
